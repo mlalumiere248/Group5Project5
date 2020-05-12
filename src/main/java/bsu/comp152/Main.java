@@ -38,15 +38,15 @@ public class Main extends Application {
 
     @FXML
     public  void openPhoneWindow(ActionEvent event){
-        Parent root = null;
+        Parent phoneroot = null;
         var loc = getClass().getResource("PhoneWindow.fxml");
         try {
-            root = FXMLLoader.load(loc);
+            phoneroot = FXMLLoader.load(loc);
         }catch (IOException e){
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
         //here is where we are creating the new window
-        Scene windowContents = new Scene(root, 900,400);
+        Scene windowContents = new Scene(phoneroot, 900,400);
         Stage phoneWindow = new Stage();
         phoneWindow.setScene(windowContents);
         phoneWindow.setTitle("Phone Code");

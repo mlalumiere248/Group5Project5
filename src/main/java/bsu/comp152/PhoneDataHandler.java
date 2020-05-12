@@ -13,7 +13,7 @@ public class PhoneDataHandler {
     private HttpClient dataGrabber;
     private String webLocation;
 
-    public DataHandler(String webLocation) {
+    public PhoneDataHandler(String webLocation) {
         dataGrabber = HttpClient.newHttpClient();
         this.webLocation = webLocation;
     }
