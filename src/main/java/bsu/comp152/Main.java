@@ -46,7 +46,7 @@ public class Main extends Application {
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
         //here is where we are creating the new window
-        Scene windowContents = new Scene(phoneroot, 900,400);
+        Scene windowContents = new Scene(phoneroot);
         Stage phoneWindow = new Stage();
         phoneWindow.setScene(windowContents);
         phoneWindow.setTitle("Phone Code");
