@@ -25,7 +25,7 @@ public class Main extends Application {
         }catch (IOException e){
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
-        Scene windowContents = new Scene(root, 300,400);
+        Scene windowContents = new Scene(root);
         primaryStage.setScene(windowContents);
         primaryStage.setTitle("Selecting an API");
         primaryStage.show();
